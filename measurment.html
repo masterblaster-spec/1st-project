@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    
+ 
+ <h2 style="margin-top:18px">Registered children</h2>
+        <div class="child-list card" id="childList"></div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2>2) Add measurement</h2>
+          <form id="measForm">
+            <label>Select child</label>
+            <select id="selectChild"></select>
+
+            <label>Measurement date</label>
+            <input id="mDate" type="date" required />
+
+            <label>Age (auto computed from DOB once you choose child)</label>
+            <input id="mAge" readonly />
+
+            <label>Height (cm)</label>
+            <input id="mHeight" type="number" step="0.1" placeholder="in cm" required />
+
+            <label>Weight (kg)</label>
+            <input id="mWeight" type="number" step="0.1" placeholder="in kg" required />
+
+            <label>Head circumference (cm) — optional</label>
+            <input id="mHead" type="number" step="0.1" placeholder="cm" />
+
+            <div style="display:flex;gap:8px;margin-top:12px">
+              <button type="submit">Generate report</button>
+              <button id="resetMeas" type="button" style="background:#f59e0b">Reset form</button>
+            </div>
+          </form>
+          </body>
+ </html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Child Growth Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">GrowthCheck</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="wrap">
+      <h1 style="margin:0;font-size:22px">About This Project</h1>
+      <div style="font-size:13px;opacity:0.9;margin-top:6px">
+        Learn what this tool does and how it works.
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <div class="card">
+      <h2>What is the Child Growth Checker?</h2>
+      <p style="font-size:14px;line-height:1.6;">
+        The Child Growth Checker is a simple, browser-based tool that helps parents, teachers, 
+        and caregivers keep track of basic child growth metrics.  
+        It provides an approximate growth category using BMI and publicly available CDC/WHO guidance.
+      </p>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>How it Works</h2>
+      <ul style="font-size:14px;line-height:1.6;margin-left:16px;">
+        <li>You register a child with basic information (name, DOB, sex, optional notes).</li>
+        <li>You input height and weight to generate growth approximations.</li>
+        <li>The tool calculates BMI and gives a general growth category.</li>
+        <li>Data is stored **only locally** in your browser using localStorage.</li>
+        <li>No data leaves your device. Nothing is uploaded.</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>Important Disclaimer</h2>
+      <p style="font-size:14px;line-height:1.6;">
+        This is a demonstration tool and is **not intended for clinical diagnosis or medical decision-making**.
+        For accurate percentile-based assessments, consult healthcare professionals or use the official CDC BMI calculator, which is also embedded in this project.
+      </p>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>Why Was This Built?</h2>
+      <p style="font-size:14px;line-height:1.6;">
+        This project serves as a lightweight example of how child growth tools can be implemented entirely on the front end 
+        without storing or transmitting sensitive data.  
+        It is useful for demonstrations, school projects, parent awareness, and web development practice.
+      </p>
+    </div>
+
+    <footer class="card" style="margin-top:18px;">
+      <strong>Note:</strong> This tool stores everything in your browser and does not share data with any server.
+    </footer>
+
+  </main>
+
+</body>
+</html>

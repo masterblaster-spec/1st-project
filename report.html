@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reports — Child Growth Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">GrowthCheck</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="wrap">
+      <h1 style="margin:0;font-size:22px">Child Growth Reports</h1>
+      <div style="font-size:13px;opacity:0.9;margin-top:6px">
+        View saved children and generate updated growth reports.
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- CHILD LIST -->
+    <div class="card">
+      <h2>Saved Children</h2>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:10px">
+        Select a child to view or re-generate a growth report.
+      </p>
+
+      <div id="childList" class="child-list">
+        <!-- Script will insert items here -->
+      </div>
+    </div>
+
+    <!-- REPORT PANEL -->
+    <div class="card" style="margin-top:18px">
+      <h2>Growth Report</h2>
+      <div id="reportArea" class="report" style="display:none">
+        <h3>Report Details</h3>
+        <div id="reportContent"></div>
+
+        <div class="note">
+          This report uses BMI and general CDC/WHO guidance.
+          For clinical accuracy, refer to official growth charts and medical evaluation.
+        </div>
+      </div>
+
+      <div id="noSelection" style="font-size:14px;color:var(--muted);padding:12px;">
+        Select a child above to generate a report.
+      </div>
+    </div>
+
+    <footer class="card" style="margin-top:18px">
+      <strong>Note:</strong> All data is stored locally in your browser and is never uploaded.
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

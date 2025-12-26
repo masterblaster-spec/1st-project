@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register — Child Growth Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">GrowthCheck</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="wrap">
+      <h1 style="margin:0;font-size:22px">Register a New Child</h1>
+      <div style="font-size:13px;opacity:0.9;margin-top:6px">
+        Add a child's basic details to begin tracking growth.
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="card">
+      <h2>Child Registration</h2>
+
+      <form id="regForm">
+        <label>Child Name</label>
+        <input id="cName" placeholder="e.g. Aisha Khan" required />
+
+        <label>Date of Birth</label>
+        <input id="cDob" type="date" required />
+
+        <label>Sex</label>
+        <select id="cSex">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+
+        <label>Notes (optional)</label>
+        <input id="cNotes" placeholder="Allergies, school, etc" />
+
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <button type="submit">Save Child</button>
+          <button id="clearAll" type="button" style="background:#ef4444">Clear All</button>
+        </div>
+      </form>
+    </div>
+
+    <footer class="card" style="margin-top:18px">
+      <strong>Note:</strong> This is a local demo. All information is stored only in your browser
+      and never uploaded.
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CDC BMI Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">GrowthCheck</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="wrap">
+      <h1 style="margin:0;font-size:22px">Official CDC BMI Calculator</h1>
+      <div style="font-size:13px;opacity:0.9;margin-top:6px">
+        This is the official child & teen BMI calculator provided by the Centers for Disease Control and Prevention.
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="card">
+      <h2>CDC Child & Teen BMI Calculator (Ages 2–19)</h2>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:8px">
+        This widget calculates BMI percentile and shows official CDC growth charts.
+        It is embedded directly from cdc.gov for accuracy and security.
+      </p>
+
+      <iframe 
+        src="https://www.cdc.gov/bmi/child-teen-calculator/calculator.html"
+        title="CDC BMI Calculator"
+        height="530"
+        style="width:100%;border:1px solid #e6e9ee;border-radius:8px">
+      </iframe>
+    </div>
+
+    <footer class="card" style="margin-top:18px">
+      This calculator is provided by the CDC. No data leaves your browser; the CDC widget processes inputs locally.
+    </footer>
+  </main>
+
+</body>
+</html>

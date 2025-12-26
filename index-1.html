@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Child Growth Checker — Dummy Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">GrowthCheck</div>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/register.html">Register</a></li>
+      <li><a href="/cdc-calculator.html">Reports</a></li>
+      <li><a href="/about.html">About</a></li>
+    </ul>
+  </nav>
+  <!-- END NAV -->
+
+  <header>
+    <div class="wrap">
+      <h1 style="margin:0;font-size:20px">Child Growth Checker</h1>
+      <div style="font-size:13px;opacity:0.9;margin-top:6px">
+        Register children, enter measurements, and get a quick growth report
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid">
+      <div class="card">
+        <h2>1) Register a child</h2>
+
+        <form id="regForm">
+          <label>Child name</label>
+          <input id="cName" placeholder="e.g. Aisha Khan" required />
+
+          <label>Date of birth</label>
+          <input id="cDob" type="date" required />
+
+          <label>Sex</label>
+          <select id="cSex">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+
+          <label>Notes (optional)</label>
+          <input id="cNotes" placeholder="Allergies, school, etc" />
+
+          <div style="display:flex;gap:8px;margin-top:12px">
+            <button type="submit">Save child</button>
+            <button id="clearAll" type="button" style="background:#ef4444">Clear all</button>
+          </div>
+        </form>
+
+        <div id="reportBox" class="report" style="display:none">
+          <h3>Growth report</h3>
+          <div id="reportContent"></div>
+          <div class="note">
+            This demo uses BMI and general CDC/WHO growth guidance to provide an approximate category.
+            For precise percentiles and clinical decisions, consult a clinician or use the CDC embedded calculator below.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h2>Official CDC BMI Calculator (embedded)</h2>
+        <div style="font-size:13px;color:var(--muted);margin-bottom:8px">
+          You can use the CDC widget to compute BMI percentile and view plotted growth charts (ages 2–19).
+        </div>
+        <iframe
+          src="https://www.cdc.gov/bmi/child-teen-calculator/calculator.html"
+          title="CDC BMI Calculator"
+          height="400"
+          style="width:100%;border:1px solid #e6e9ee;border-radius:8px"
+        ></iframe>
+      </div>
+    </div>
+
+    <footer class="card" style="margin-top:18px">
+      <strong>Demo notes:</strong> This is a front-end-only demo. All data is stored locally in
+      your browser (localStorage) and is not sent anywhere.
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
